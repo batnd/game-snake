@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'PTSans';
+    font-weight: 400;
+    src: url("./fonts/PTSans-Regular.ttf");
+}
+@font-face {
+    font-family: 'PTSans';
+    font-weight: 700;
+    src: url("./fonts/PTSans-Bold.ttf");
+}
+
+*, body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    row-gap: 30px;
+}
+
+.title {
+    font-size: 52px;
+    font-family: PTSans, sans-serif;
+    font-weight: 700;
+    color: #2a2a2a;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px solid #eaeaea;
+}
+
+canvas {
+    background: #eaeaea;
+    border-radius: 3px;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.score {
+    font-family: PTSans, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    color: #2a2a2a;
+}
+
+.button {
+    font-size: 20px;
+    font-family: PTSans,sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 20px;
+    background: #e6dedd;
+    color: #414141;
+    border: 0;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-reload {
+    width: 66px;
+    font-size: 20px;
+    font-family: PTSans,sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 20px;
+    background: #d95444;
+    color: white;
+    border: 0;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+    outline: none;
+}
+.button-reload:hover {
+    background: #c94939;
+}
+.button-reload:active {
+    background: #b43122;
+}
+
+.button:hover {
+    background: #d0c7c6;
+}
+
+.button:active {
+    background: #b2a9a8;
+}
+
+.rules {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.rules .rules-title {
+    font-family: PTSans, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #414141;
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.rules ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.rules ul li p, .rules ul li div {
+    font-family: PTSans, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #414141;
+}
